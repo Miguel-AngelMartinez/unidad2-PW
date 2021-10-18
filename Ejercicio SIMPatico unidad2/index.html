@@ -1,0 +1,23 @@
+<HTML>
+  <HEAD>
+  <TITLE> Maldito botón </TITLE>
+  
+  <SCRIPT LANGUAJE="JAVASCRIPT">
+  var MovRaton=0
+   
+  function CambiaPosicion(){
+    MovRaton=(MovRaton+1)%10
+    if (MovRaton==0) {
+      Boton.style.top=window.event.y - Math.random()*30-Boton.clientHeight-10
+      Boton.style.left=window.event.x - Math.random()*30-Boton.clientWidth-10
+    }
+  }
+  </SCRIPT>
+  </HEAD>
+   
+  <BODY>
+    <label >Quieres ser mi novia???</label>
+  <button type="submit" onclick="alert('Felicidades bebe :3')">SI</button>
+   <INPUT onmousemove="CambiaPosicion()" TYPE=BUTTON ID="Boton" STYLE="position:absolute" VALUE="NO">
+  </BODY>
+  </HTML>
