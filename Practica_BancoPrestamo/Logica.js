@@ -55,6 +55,9 @@ $(document).ready(function () {
                     var PI=total*FRC;
                     console.log(PI);
 
+
+                    var nuevo=((Math.pow((1+(t/p)))*(t/p)),2)
+
                     
                 }
                 if(amortizacion==1){
